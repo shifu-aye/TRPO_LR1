@@ -1,0 +1,47 @@
+﻿<Window x:Class="LR_TRPO.MainWindow"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LR_TRPO"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Вкусно и модель автомата по продаже штучных товаров с оплатой через наличный расчет (принимаются купюры 100р, 50р., монеты 10р., 5р., 2р., 1р.). Возможно использование магнитной карты/таблетки для предоставления скидки. Сдача – наличными.
+" Height="450" Width="370">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="32*"/>
+            <ColumnDefinition Width="76*"/>
+            <ColumnDefinition Width="76*"/>
+            <ColumnDefinition Width="93*"/>
+            <ColumnDefinition Width="93*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="16*"/>
+            <RowDefinition Height="92*"/>
+            <RowDefinition Height="109*"/>
+            <RowDefinition Height="109*"/>
+            <RowDefinition Height="109*"/>
+        </Grid.RowDefinitions>
+        <Image Source="/Res/TorgoviyAutomat.png" Stretch="Fill" Grid.ColumnSpan="5" Grid.RowSpan="5"/>
+        <TextBlock x:Name="ProductTb" Grid.Row="1" Grid.Column="4" FontSize="17"/>
+        <Button Grid.Column="4" Grid.Row="2" BorderBrush="Transparent" Background="Transparent" Click="Button_Click">
+            <StackPanel>
+                <Image Source="/Res/keysFar.png" Stretch="Fill" />
+            </StackPanel>
+        </Button>
+        <Button x:Name="shaurmBtn" ToolTip="01|Шаурма Классическая|150 рублей" Grid.Column="1" Grid.Row="1" Background="Transparent">
+            <StackPanel Height="200">
+                <Image Source="/Res/Products/Shaurm.png" Stretch="Fill" Height="89"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="cebabBtn" ToolTip="01|Шаурма Классическая|150 рублей" Grid.Column="1" Grid.Row="1" Background="Transparent">
+            <StackPanel Height="200">
+                <Image Source="/Res/Products/Shaurm.png" Stretch="Fill" Height="89"/>
+            </StackPanel>
+        </Button>
+        <Image Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" x:Name="monke" Stretch="Fill" gif:ImageBehavior.AnimatedSource="/Res/coldplay-dancing.gif" Margin="0,108,0,108" Grid.RowSpan="3"></Image>
+    </Grid>
+</Window>
