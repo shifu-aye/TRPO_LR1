@@ -9,7 +9,7 @@
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         Title="Вкусно и модель автомата по продаже штучных товаров с оплатой через наличный расчет (принимаются купюры 100р, 50р., монеты 10р., 5р., 2р., 1р.). Возможно использование магнитной карты/таблетки для предоставления скидки. Сдача – наличными.
-" Height="450" Width="370">
+" Height="450" Width="370" MinHeight="450" MinWidth="370">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="32*"/>
@@ -26,20 +26,45 @@
             <RowDefinition Height="109*"/>
         </Grid.RowDefinitions>
         <Image Source="/Res/TorgoviyAutomat.png" Stretch="Fill" Grid.ColumnSpan="5" Grid.RowSpan="5"/>
-        <TextBlock x:Name="ProductTb" Grid.Row="1" Grid.Column="4" FontSize="17"/>
+        <TextBlock x:Name="ProductTb" Grid.Row="1" TextWrapping="Wrap" Grid.Column="4" FontSize="17"/>
+        <Button x:Name="PaymentBtn" Grid.Column="4" Grid.Row="3" Background="Transparent" ToolTip="Внесите деньги">
+            <StackPanel>
+                <Image Source="/Res/PayTerminal.png" Stretch="Fill" Height="105" Width="86" />
+            </StackPanel>
+        </Button>
         <Button Grid.Column="4" Grid.Row="2" BorderBrush="Transparent" Background="Transparent" Click="Button_Click">
             <StackPanel>
                 <Image Source="/Res/keysFar.png" Stretch="Fill" />
             </StackPanel>
         </Button>
-        <Button x:Name="shaurmBtn" ToolTip="01|Шаурма Классическая|150 рублей" Grid.Column="1" Grid.Row="1" Background="Transparent">
+        <Button x:Name="shaurmBtn" ToolTip="01|Шаурма Классическая|200 рублей" Grid.Column="1" Grid.Row="1" Background="Transparent">
             <StackPanel Height="200">
                 <Image Source="/Res/Products/Shaurm.png" Stretch="Fill" Height="89"/>
             </StackPanel>
         </Button>
-        <Button x:Name="cebabBtn" ToolTip="01|Шаурма Классическая|150 рублей" Grid.Column="1" Grid.Row="1" Background="Transparent">
+        <Button x:Name="cebabBtn" ToolTip="02|Люля-Кебаб|200 рублей" Grid.Column="2" Grid.Row="1" Background="Transparent">
             <StackPanel Height="200">
-                <Image Source="/Res/Products/Shaurm.png" Stretch="Fill" Height="89"/>
+                <Image Source="/Res/Products/Kebab.png" Stretch="Fill" Height="89"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="EleshBtn" ToolTip="03|Элеш|70 рублей" Grid.Column="3" Grid.Row="1" Background="Transparent">
+            <StackPanel Height="200">
+                <Image Source="/Res/Products/Elesh.jpg" Stretch="Fill" Height="89"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="LagmanBtn" ToolTip="04|Лагман|120 рублей" Grid.Column="1" Grid.Row="2" Background="Transparent">
+            <StackPanel Height="200">
+                <Image Source="/Res/Products/Lagman.jpg" Stretch="Fill" Height="105"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="SamsaBtn" ToolTip="05|Самса|80 рублей" Grid.Column="2" Grid.Row="2" Background="Transparent">
+            <StackPanel Height="200">
+                <Image Source="/Res/Products/Samsa.jpeg" Stretch="Fill" Height="106"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="KampotBtn" ToolTip="06|Компот|40 рублей" Grid.Column="3" Grid.Row="2" Background="Transparent">
+            <StackPanel Height="200">
+                <Image Source="/Res/Products/Kampot.jpg" Stretch="Fill" Height="105"/>
             </StackPanel>
         </Button>
         <Image Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" x:Name="monke" Stretch="Fill" gif:ImageBehavior.AnimatedSource="/Res/coldplay-dancing.gif" Margin="0,108,0,108" Grid.RowSpan="3"></Image>

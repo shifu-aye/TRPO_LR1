@@ -35,3 +35,5 @@ C:\Users\alesh\source\repos\LR_TRPO\LR_TRPO\bin\Debug\System.Numerics.Vectors.xm
 C:\Users\alesh\source\repos\LR_TRPO\LR_TRPO\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\alesh\source\repos\LR_TRPO\LR_TRPO\bin\Debug\System.Text.Encodings.Web.xml
 C:\Users\alesh\source\repos\LR_TRPO\LR_TRPO\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\alesh\source\repos\LR_TRPO\LR_TRPO\obj\Debug\Windows\PaymentWindow.g.cs
+C:\Users\alesh\source\repos\LR_TRPO\LR_TRPO\obj\Debug\Windows\PaymentWindow.baml

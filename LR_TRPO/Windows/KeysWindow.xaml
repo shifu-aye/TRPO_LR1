@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:LR_TRPO.Windows"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="KeysWindow" Height="384" Width="255">
+        Title="Окно" Height="384" Width="255" MinHeight="384" MinWidth="255" MaxHeight="384" MaxWidth="255">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="61*"/>
@@ -22,11 +22,11 @@
             <RowDefinition Height="48*"/>
         </Grid.RowDefinitions>
         <Image Source="/Res/Keys (1).png" Stretch="Fill" Grid.RowSpan="6" Grid.ColumnSpan="3"/>
-        <Border Grid.Row="4" Grid.ColumnSpan="3" Background="DarkGray" BorderBrush="DarkGray">
-            <TextBlock x:Name="numTab" x:FieldModifier="protected internal" HorizontalAlignment="Center"/>
+        <Border Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="3" Background="DarkGray" BorderBrush="DarkGray">
+            <TextBlock x:Name="NumTab" HorizontalAlignment="Center" FontFamily="Impact" FontSize="20"/>
         </Border>
-        <Button x:Name="AcceptBtn"  Content="Выбрать" Grid.Column="0" Grid.Row="5" Click="AcceptBtn_Click" />
-        <Button Content="Отмена" Grid.Column="2" Grid.Row="5" Click="Button_Click" />
+        <Button x:Name="AcceptBtn"  Content="Выбрать" Grid.Column="0" Grid.Row="5" Click="AcceptBtn_Click" FontFamily="Impact" FontSize="20"/>
+        <Button Content="Отмена" Grid.Column="2" Grid.Row="5" Click="Button_Click" FontFamily="Impact" FontSize="20"/>
         <Button x:Name="oneBtn" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Height="64" Width="83" Grid.Column="0" Grid.Row="0" Background="Transparent" Click="oneBtn_Click" />
         <Button x:Name="twoBtn" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Height="64" Width="83" Grid.Column="1" Grid.Row="0" Background="Transparent" Click="twoBtn_Click"/>
         <Button x:Name="threeBtn" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Height="64" Width="83" Grid.Column="2" Grid.Row="0" Background="Transparent" Click="threeBtn_Click"/>

@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using LR_TRPO.Models;
 
 namespace LR_TRPO.Windows
 {
@@ -31,85 +32,101 @@ namespace LR_TRPO.Windows
 
         private void AcceptBtn_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
-            switch (numTab.Text)
+            switch (NumTab.Text)
             {
                 case "01":
-                    mainWindow.ProductTb.Text += Convert.ToString("Шаурма|150 рублей");
+                    DataBank.Text = "Шаурма, 200 рублей";
+                    new PaymentWindow(DataBank.Text, new User().Money).Show();
                     break;
                 case "02":
-                    mainWindow.ProductTb.Text = "Кебаб|150 рублей";
+                    DataBank.Text = "Люля-Кебаб, 200 рублей";
+                    new PaymentWindow(DataBank.Text, new User().Money).Show();
+                    break;
+                case "03":
+                    DataBank.Text = "Элеш, 70 рублей";
+                    new PaymentWindow(DataBank.Text, new User().Money).Show();
+                    break;
+                case "04":
+                    DataBank.Text = "Лагман, 120 рублей";
+                    new PaymentWindow(DataBank.Text, new User().Money).Show();
+                    break;
+                case "05":
+                    DataBank.Text = "Самса, 80 рублей";
+                    new PaymentWindow(DataBank.Text, new User().Money).Show();
+                    break;
+                case "06":
+                    DataBank.Text = "Компот, 40 рублей";
+                    new PaymentWindow(DataBank.Text, new User().Money).Show();
                     break;
                 default:
                     MessageBox.Show("Такого продукта нет", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                     break;
             }
-
             Close();
         }
 
         private void oneBtn_Click(object sender, RoutedEventArgs e)
         {
-            numTab.Text += "1";
+            NumTab.Text += "1";
         }
 
         private void twoBtn_Click(object sender, RoutedEventArgs e)
         {
-            numTab.Text += "2";
+            NumTab.Text += "2";
         }
 
         private void threeBtn_Click(object sender, RoutedEventArgs e)
         {
-            numTab.Text += "3";
+            NumTab.Text += "3";
         }
 
         private void fourBtn_Click(object sender, RoutedEventArgs e)
         {
-            numTab.Text += "4";
+            NumTab.Text += "4";
         }
 
         private void fiveBtn_Click(object sender, RoutedEventArgs e)
         {
-            numTab.Text += "5";
+            NumTab.Text += "5";
         }
 
         private void sixBtn_Click(object sender, RoutedEventArgs e)
         {
-            numTab.Text += "6";
+            NumTab.Text += "6";
         }
 
         private void sevenBtn_Click(object sender, RoutedEventArgs e)
         {
-            numTab.Text += "7";
+            NumTab.Text += "7";
         }
 
         private void eightBtn_Click(object sender, RoutedEventArgs e)
         {
-            numTab.Text += "8";
+            NumTab.Text += "8";
         }
 
         private void nineBtn_Click(object sender, RoutedEventArgs e)
         {
-            numTab.Text += "9";
+            NumTab.Text += "9";
         }
 
         private void zeroBtn_Click(object sender, RoutedEventArgs e)
         {
-            numTab.Text += "0";
+            NumTab.Text += "0";
         }
 
         private void CBtn_Click(object sender, RoutedEventArgs e)
         {
-            numTab.Text = "";
+            NumTab.Text = "";
         }
 
         private void XBtn_Click(object sender, RoutedEventArgs e)
         {
-            if (numTab.Text != "")
+            if (NumTab.Text != "")
             {
                 int x1 = 0;
-                x1 = numTab.Text.Length - 1;
-                numTab.Text = numTab.Text.Substring(0, x1);
+                x1 = NumTab.Text.Length - 1;
+                NumTab.Text = NumTab.Text.Substring(0, x1);
                 
             }
         }

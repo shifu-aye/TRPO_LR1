@@ -14,7 +14,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using LR_TRPO.Models;
 using LR_TRPO.Windows;
+using MessageBox = System.Windows.MessageBox;
 
 namespace LR_TRPO
 {
@@ -30,13 +32,14 @@ namespace LR_TRPO
             sp.SoundLocation = @"C:\\Users\\alesh\\source\\repos\\LR_TRPO\\LR_TRPO\\Res\\Audio\\Lesginka.wav";
             sp.Load();
             sp.PlayLooping();
-            
+            DataBank.Text = "";
+            return;
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            KeysWindow keysWindow = new KeysWindow();
-            keysWindow.Show();
+            new KeysWindow().Show();
         }
     }
 }

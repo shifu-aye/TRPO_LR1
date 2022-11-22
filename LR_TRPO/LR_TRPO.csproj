@@ -84,9 +84,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Models\DataBank.cs" />
     <Compile Include="Models\Products.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Windows\KeysWindow.xaml.cs">
       <DependentUpon>KeysWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\PaymentWindow.xaml.cs">
+      <DependentUpon>PaymentWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -101,6 +106,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Windows\KeysWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\PaymentWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -138,6 +147,12 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Res\Audio\Lesginka.wav" />
+    <Resource Include="Res\PayTerminal.png" />
+    <Resource Include="Res\Products\Lagman.jpg" />
+    <Resource Include="Res\Products\Samsa.jpeg" />
+    <Resource Include="Res\Products\Kampot.jpg" />
+    <Resource Include="Res\Products\Elesh.jpg" />
+    <Resource Include="Res\Products\Kebab.png" />
     <Resource Include="Res\Products\Shaurm.png" />
     <Resource Include="Res\keysFar.png" />
     <Resource Include="Res\Keys %281%29.png" />
