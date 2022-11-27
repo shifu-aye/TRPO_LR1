@@ -27,7 +27,7 @@
         </Grid.RowDefinitions>
         <Image Source="/Res/TorgoviyAutomat.png" Stretch="Fill" Grid.ColumnSpan="5" Grid.RowSpan="5"/>
         <TextBlock x:Name="ProductTb" Grid.Row="1" TextWrapping="Wrap" Grid.Column="4" FontSize="17"/>
-        <Button x:Name="PaymentBtn" Grid.Column="4" Grid.Row="3" Background="Transparent" ToolTip="Внесите деньги">
+        <Button x:Name="DiscontBtn" Grid.Column="4" Grid.Row="3" Background="Transparent" ToolTip="Приложить магнитную карту">
             <StackPanel>
                 <Image Source="/Res/PayTerminal.png" Stretch="Fill" Height="105" Width="86" />
             </StackPanel>

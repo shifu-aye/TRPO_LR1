@@ -85,7 +85,6 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Models\DataBank.cs" />
-    <Compile Include="Models\Products.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Windows\KeysWindow.xaml.cs">
       <DependentUpon>KeysWindow.xaml</DependentUpon>
@@ -147,6 +146,12 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Res\Audio\Lesginka.wav" />
+    <Resource Include="Res\rub1.png" />
+    <Resource Include="Res\rub10.png" />
+    <Resource Include="Res\rub2.png" />
+    <Resource Include="Res\rub5.png" />
+    <Resource Include="Res\rub50.png" />
+    <Resource Include="Res\stoRub.png" />
     <Resource Include="Res\PayTerminal.png" />
     <Resource Include="Res\Products\Lagman.jpg" />
     <Resource Include="Res\Products\Samsa.jpeg" />
